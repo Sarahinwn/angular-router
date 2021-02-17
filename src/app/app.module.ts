@@ -17,6 +17,7 @@ import { HeroesListComponent } from './components/heroes-list/heroes-list.compon
     RouterModule.forRoot([
       {path: 'crisis-list', component: CrisisListComponent},
       {path: 'heroes-list', component: HeroesListComponent},
+      {path: '', redirectTo: '/heroes-list', pathMatch: 'full'}
     ]),
   ],
   providers: [],
